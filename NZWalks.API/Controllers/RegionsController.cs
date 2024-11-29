@@ -42,7 +42,7 @@ namespace NZWalks.API.Controllers
         //GET SINGLE REGION(Get Region By ID)
         //https://localhost:3000/api/regions/{id}
         [HttpGet]
-        [Route("{id:guid}")]
+        [Route("{id:Guid}")]
         public IActionResult GetById([FromRoute] Guid id)
         {
             //var region = dbContext.Regions.Find(id);
